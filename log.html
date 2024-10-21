@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("images/im3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        form{
+            height: 600px;
+            width: 300px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 2px 5px 5px gray;
+            border: none;
+            color: white;
+            background-color: transparent;
+            backdrop-filter: blur(20px);
+        }
+        h2{
+            color: white;
+
+        }
+        h3{
+            color: white;
+        }
+        button{
+            height: 40px;
+            width: 80%;
+            background-color: yellow;
+            color: red;
+            border: none;
+            border-radius: 20px;
+        }
+        input{
+            height: 30px;
+            width: 80%;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+       h4  a{
+            height: 25px;
+            width: 300px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: end;
+            text-decoration: none;
+        }
+        h5{
+            color: gray;
+        }
+        a{
+            color: gray;
+            text-decoration: none;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <form action="book.html">
+        <h2>Welcome Back <br><h5>Login to your Account</h5></h2>
+        
+        <h3>Username</h3>
+            <input type="text" placeholder="Username /Email">
+            <h3>Password</h3>
+            <input type="password" placeholder="Enter 8 digit password">
+           <h4> <a href="forget.html">Forget pssword</a></h4>
+            <button >Login</button>
+        <section>
+            <a href="./reg.html">New Rigester></a></section>
+        </from>
+</body>
+</html>

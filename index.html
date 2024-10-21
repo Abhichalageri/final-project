@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVivJKMA0Hc2ar-DCDSOjdl2GPAbypf6ergg&s"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BITE BOX</title>
+  </head>
+  <body>
+    <section class="hero__section">
+      <header>
+        <nav class="navbar">
+          <a href="#">Get The App</a>
+          <div class="navbar__menu_container">
+            <a href="#" class="link">Investor Relations</a>
+            <a href="#" class="link">Add Restaurant</a>
+            <a href="log.html" class="link">Log In</a>
+            <a href="reg.html" class="reg.html">Reg</a>
+            <a href="#" class="user__icon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <div class="hero__section_container">
+        <img
+          class="hero__section_logo"
+          src="images/im7.png"
+          alt="Zomato Logo"
+        />
+        <h1 class="hero__section_title">
+          Deliver the best food & drinks 
+        </h1>
+        <div class="hero__section_input_container">
+          <input
+            class="input_container_location"
+            type="text"
+            placeholder="YWCA, 1, Ashok Rd, Hanu"
+          />
+          <input
+            class="input_container_search"
+            type="text"
+            placeholder="Search for a restaurant, cuisine or a dish"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="container we__offer">
+      <div class="card">
+        <img src="data:image/png;base64,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" alt="" />
+        <h2>Order Online</h2>
+        <p>Stay home and order to your dooretep</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2PLw4gzqvmeowKeA6gG2vWD0K_YBRGxCufw&s" alt="" />
+        <h2>Dining</h2>
+        <p>View the city's favourite dining venues</p>
+      </div>
+      <div class="card">
+        <img src="images/item3.png" alt="" />
+        <h2>Nightlife and Clubs</h2>
+        <p>Explore the city’s top nightlife outlets</p>
+      </div>
+    </section>
+
+    <section class="container collections">
+      <h1>Collections</h1>
+      <div class="sub__heading_container">
+        <span>
+          Explore curated lists of top restaurants, cafes, pubs, and bars in
+          Delhi NCR, based on trends
+        </span>
+        <span>All collections in Delhi NCR</span>
+      </div>
+      <div class="collections_card_container">
+        <div class="card card1">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Live Cricket Screening</h4>
+            <span>58 Place</span>
+          </div>
+        </div>
+
+        <div class="card card2">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Ramadan Special</h4>
+            <span>22 Place</span>
+          </div>
+        </div>
+
+        <div class="card card3">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Newly Opened</h4>
+            <span>20 Place</span>
+          </div>
+        </div>
+
+        <div class="card card4">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Trending This Week</h4>
+            <span>30 Place</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container get__the_app">
+      <div class="semiContainer">
+        <div class="left">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVivJKMA0Hc2ar-DCDSOjdl2GPAbypf6ergg&s" alt="banner" />
+        </div>
+        <div class="right">
+          <h1>Get the BiteBox App</h1>
+
+          <p>
+            We will send you a link, open it on your phone to download the app.
+          </p>
+
+          <div class="radio__buttons_container">
+            <div>
+              <input type="radio" id="email" name="download_app" />
+              <label for="email" style="font-size: 14px">Email</label>
+            </div>
+            <div>
+              <input type="radio" id="phone" name="download_app" />
+              <label for="phone" style="font-size: 14px">Phone</label>
+            </div>
+          </div>
+
+          <div class="input_container">
+            <input type="text" placeholder="Email" />
+            <button>Share App Link</button>
+          </div>
+
+          <div class="download__app_container">
+            <h5>Download App From</h5>
+            <div>
+              <img src="images/playStore.png" alt="" />
+              <img src="images/appleStore.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_section1">
+        <img src="images/im8.png" alt="zomato logo" />
+        <div class="section1__buttonContainer">
+          <button>
+            <img
+              src="https://flagcdn.com/w40/in.png"
+              alt="India"
+              style="width: 17px"
+            />
+            India
+          </button>
+          <button>
+            <i class="fa fa-globe" aria-hidden="true"></i> English
+          </button>
+        </div>
+      </div>
+      <div class="navigation_container">
+        <div class="link__container">
+          <h5>ABOUT BiteBox</h5>
+          <a class="footer__link" href="#">Who we are</a>
+          <a class="footer__link" href="#">Blogs</a>
+          <a class="footer__link" href="#">Work with us</a>
+          <a class="footer__link" href="#">Investor Relations</a>
+          <a class="footer__link" href="#">Report Fraud</a>
+        </div>
+
+        <div class="link__container">
+          <h5>ZOMAVERSE</h5>
+          <a class="footer__link" href="#">BiteBox</a>
+          <a class="footer__link" href="#">Feeding India</a>
+          <a class="footer__link" href="#">Hyperpuer</a>
+          <a class="footer__link" href="#">Zomaland</a>
+        </div>
+
+        <div class="link__container">
+          <h5>FOR RESTAURANTS</h5>
+          <a class="footer__link" href="#">Partner With Us</a>
+          <a class="footer__link" href="#">App For You</a>
+          <br />
+          
+        </div>
+
+        <div class="link__container">
+          <h5>LERN MORE</h5>
+          <a class="footer__link" href="#">Privacy</a>
+          <a class="footer__link" href="#">Security</a>
+          <a class="footer__link" href="#">Terms</a>
+          <a class="footer__link" href="#">Sitemap</a>
+        </div>
+
+        <div class="link__container">
+          <h5>SOCIAL LINKS</h5>
+          <div class="social__links_container">
+            <button><i class="fa-brands fa-linkedin-in"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-youtube"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+          </div>
+          <br />
+          <img src="images/appleStore.png" alt="" class="footer__store_logos" />
+          <img src="images/playStore.png" alt="" class="footer__store_logos" />
+        </div>
+      </div>
+      <p class="disclamer">
+        By continuing past this page, you agree to our Terms of Service, Cookie
+        Policy, Privacy Policy and Content Policies. All trademarks are
+        properties of their respective owners. 2008-2022 © Zomato™ Ltd. All
+        rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
